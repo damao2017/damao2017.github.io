@@ -377,7 +377,19 @@ tags: [&quot;&quot;]
 </li>
 <li>
 <p>生成本地的html页面</p>
+<p>在notes文件夹下，执行<code>hugo</code>命令即可，notes下的public文件夹会生成html网页。</p>
 </li>
+<li>
+<p>发布到github pages</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/damao2017/damao2017.github.io.git
+<span style="color:#75715e">#删除damao2017.github.io.git文件夹下所有内容</span>
+git add .
+git commit
+<span style="color:#75715e">#然后把.git文件夹移动到public文件夹</span>
+git add .
+git commit
+git push
+</code></pre></div></li>
 </ol>
 
   
