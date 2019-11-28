@@ -216,6 +216,64 @@
   
     <article>
   <header>
+    <h2><a href="https://damao2017.github.io/post/use_hugo/">hugo使用</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2019-28-28 20:50:50</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://damao2017.github.io/tags/hugo">hugo</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://damao2017.github.io/tags/%E4%BD%BF%E7%94%A8">使用</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  下载hugo可执行文件
+我是windows平台，直接点击发布页，下载windows版本https://github.com/gohugoio/hugo/releases 
+  把hugo.exe文件所在的路径加入到环境变量path中
+  打开cmd，执行
+ hugo new site note
+将会创建一个note文件夹，下面有一些文件。
+  文件夹内容如下
+ archetypes/ --default.md 原始的md模板文件 content/ --md文件存放处 layouts/ static/ themes/ --主题文件 config.toml --配置文件   default.md模板修改如下：
++++ #默认此处应该是---,markdown显示到网页有问题，改成+++ title: &quot;{{ replace .Name &quot;-&quot; &quot; &quot; | title }}&quot; date: {{ .Date }} draft: false tags: [&quot;&quot;] ++++   下载主题文件
+官方主题地址https://themes.gohugo.io/ 
+选择你喜欢的主题，去github，下载全部项目zip，然后复制到themes文件夹。
+我选的是这个https://github.com/yoshiharuyamashita/blackburn/archive/master.zip
+最终目录为/themes/blackburn
+archetypes/ exampleSite/ images/ layouts/ static/ ---/img/favicon.ico 网页图标 theme.
+  </p>
+
+  
+  <footer>
+    <a href="https://damao2017.github.io/post/use_hugo/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
     <h2><a href="https://damao2017.github.io/post/vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">VUE 学习笔记</a></h2>
 
     <div class="post-meta">
@@ -314,81 +372,6 @@ npm install vuex --save   安装
   
   <footer>
     <a href="https://damao2017.github.io/post/markdown%E8%AF%AD%E6%B3%95/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://damao2017.github.io/post/about/">关于</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>2019-28-28 19:25:25</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://damao2017.github.io/tags/about">about</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://damao2017.github.io/tags/%E5%85%B3%E4%BA%8E">关于</a>
-    
-  </div>
-  
-  
-
-</div>
-
-  </header>
-
-  <p>
-  大家好，我是渣渣辉。
-简介  出生地：香港 性别：男 年龄：38  演员经历  是兄弟就来啃我 是兄弟就来啃我啊 是兄弟就来啃我啊哈哈  
-  </p>
-
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://damao2017.github.io/post/amy/"></a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>0001-01-01 00:00:00</time>
-  </div>
-
-  
-
-  
-
-  
-
-</div>
-
-  </header>
-
-  <p>
-  readmehtml {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; } html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; } body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; } iframe { margin: auto; } a.url { word-break: break-all; } a:active, a:hover { outline: 0px; } .
-  </p>
-
-  
-  <footer>
-    <a href="https://damao2017.github.io/post/amy/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
   </footer>
   
 </article>

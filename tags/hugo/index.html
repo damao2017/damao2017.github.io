@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.60.0" />
 
-  <title>Posts &middot; damao&#39;s blog</title>
+  <title>hugo &middot; damao&#39;s blog</title>
 
     
 
@@ -43,7 +43,7 @@
  
   
   <link rel="alternate" type="application/rss+xml" title="damao&#39;s blog"
-    href='https://damao2017.github.io/post/index.xml' />
+    href='https://damao2017.github.io/tags/hugo/index.xml' />
   
 
   
@@ -110,7 +110,7 @@
 
     
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href='https://damao2017.github.io/post/index.xml'><i
+      <a class="pure-menu-link" href='https://damao2017.github.io/tags/hugo/index.xml'><i
           class="fas fa-rss"></i>RSS</a>
     </li>
     
@@ -208,23 +208,68 @@
 
 
 <div class="header">
-  <h1>Posts</h1>
+  <h1>hugo</h1>
 </div>
+
 <div class="content">
   
-  <h2>2019</h2>
-  <ul>
-  
-    <li><time>2019-28-28 20:50:50</time> - <a href="https://damao2017.github.io/post/use_hugo/">hugo使用</a></li>
+    <article>
+  <header>
+    <h2><a href="https://damao2017.github.io/post/use_hugo/">hugo使用</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2019-28-28 20:50:50</time>
+  </div>
 
   
-    <li><time>2019-28-28 19:44:44</time> - <a href="https://damao2017.github.io/post/vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">VUE 学习笔记</a></li>
 
   
-    <li><time>2019-28-28 19:25:25</time> - <a href="https://damao2017.github.io/post/markdown%E8%AF%AD%E6%B3%95/">markdown语法</a></li>
 
   
-  </ul>
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://damao2017.github.io/tags/hugo">hugo</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://damao2017.github.io/tags/%E4%BD%BF%E7%94%A8">使用</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  下载hugo可执行文件
+我是windows平台，直接点击发布页，下载windows版本https://github.com/gohugoio/hugo/releases 
+  把hugo.exe文件所在的路径加入到环境变量path中
+  打开cmd，执行
+ hugo new site note
+将会创建一个note文件夹，下面有一些文件。
+  文件夹内容如下
+ archetypes/ --default.md 原始的md模板文件 content/ --md文件存放处 layouts/ static/ themes/ --主题文件 config.toml --配置文件   default.md模板修改如下：
++++ #默认此处应该是---,markdown显示到网页有问题，改成+++ title: &quot;{{ replace .Name &quot;-&quot; &quot; &quot; | title }}&quot; date: {{ .Date }} draft: false tags: [&quot;&quot;] ++++   下载主题文件
+官方主题地址https://themes.gohugo.io/ 
+选择你喜欢的主题，去github，下载全部项目zip，然后复制到themes文件夹。
+我选的是这个https://github.com/yoshiharuyamashita/blackburn/archive/master.zip
+最终目录为/themes/blackburn
+archetypes/ exampleSite/ images/ layouts/ static/ ---/img/favicon.ico 网页图标 theme.
+  </p>
+
+  
+  <footer>
+    <a href="https://damao2017.github.io/post/use_hugo/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
   
 </div>
 
@@ -242,4 +287,3 @@
 
 </body>
 </html>
-

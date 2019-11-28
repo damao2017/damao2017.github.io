@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>使用 on damao&#39;s blog</title>
+    <link>https://damao2017.github.io/tags/%E4%BD%BF%E7%94%A8/</link>
+    <description>Recent content in 使用 on damao&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>&amp;copy; 9012. All rights reserved.</copyright>
+    <lastBuildDate>Thu, 28 Nov 2019 20:50:55 +0800</lastBuildDate>
+    
+	<atom:link href="https://damao2017.github.io/tags/%E4%BD%BF%E7%94%A8/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>hugo使用</title>
+      <link>https://damao2017.github.io/post/use_hugo/</link>
+      <pubDate>Thu, 28 Nov 2019 20:50:55 +0800</pubDate>
+      
+      <guid>https://damao2017.github.io/post/use_hugo/</guid>
+      <description>下载hugo可执行文件
+我是windows平台，直接点击发布页，下载windows版本https://github.com/gohugoio/hugo/releases 
+  把hugo.exe文件所在的路径加入到环境变量path中
+  打开cmd，执行
+ hugo new site note
+将会创建一个note文件夹，下面有一些文件。
+  文件夹内容如下
+ archetypes/ --default.md 原始的md模板文件 content/ --md文件存放处 layouts/ static/ themes/ --主题文件 config.toml --配置文件   default.md模板修改如下：
++++ #默认此处应该是---,markdown显示到网页有问题，改成+++ title: &amp;quot;{{ replace .Name &amp;quot;-&amp;quot; &amp;quot; &amp;quot; | title }}&amp;quot; date: {{ .Date }} draft: false tags: [&amp;quot;&amp;quot;] ++++   下载主题文件
+官方主题地址https://themes.gohugo.io/ 
+选择你喜欢的主题，去github，下载全部项目zip，然后复制到themes文件夹。
+我选的是这个https://github.com/yoshiharuyamashita/blackburn/archive/master.zip
+最终目录为/themes/blackburn
+archetypes/ exampleSite/ images/ layouts/ static/ ---/img/favicon.ico 网页图标 theme.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -7,10 +7,32 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>&amp;copy; 9012. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 28 Nov 2019 19:44:54 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 28 Nov 2019 20:50:55 +0800</lastBuildDate>
     
 	<atom:link href="https://damao2017.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>hugo使用</title>
+      <link>https://damao2017.github.io/post/use_hugo/</link>
+      <pubDate>Thu, 28 Nov 2019 20:50:55 +0800</pubDate>
+      
+      <guid>https://damao2017.github.io/post/use_hugo/</guid>
+      <description>下载hugo可执行文件
+我是windows平台，直接点击发布页，下载windows版本https://github.com/gohugoio/hugo/releases 
+  把hugo.exe文件所在的路径加入到环境变量path中
+  打开cmd，执行
+ hugo new site note
+将会创建一个note文件夹，下面有一些文件。
+  文件夹内容如下
+ archetypes/ --default.md 原始的md模板文件 content/ --md文件存放处 layouts/ static/ themes/ --主题文件 config.toml --配置文件   default.md模板修改如下：
++++ #默认此处应该是---,markdown显示到网页有问题，改成+++ title: &amp;quot;{{ replace .Name &amp;quot;-&amp;quot; &amp;quot; &amp;quot; | title }}&amp;quot; date: {{ .Date }} draft: false tags: [&amp;quot;&amp;quot;] ++++   下载主题文件
+官方主题地址https://themes.gohugo.io/ 
+选择你喜欢的主题，去github，下载全部项目zip，然后复制到themes文件夹。
+我选的是这个https://github.com/yoshiharuyamashita/blackburn/archive/master.zip
+最终目录为/themes/blackburn
+archetypes/ exampleSite/ images/ layouts/ static/ ---/img/favicon.ico 网页图标 theme.</description>
+    </item>
     
     <item>
       <title>VUE 学习笔记</title>
@@ -47,31 +69,11 @@ npm install vuex --save   安装</description>
     
     <item>
       <title>关于</title>
-      <link>https://damao2017.github.io/post/about/</link>
+      <link>https://damao2017.github.io/about/</link>
       <pubDate>Thu, 28 Nov 2019 19:25:58 +0800</pubDate>
       
-      <guid>https://damao2017.github.io/post/about/</guid>
-      <description>大家好，我是渣渣辉。
-简介  出生地：香港 性别：男 年龄：38  演员经历  是兄弟就来啃我 是兄弟就来啃我啊 是兄弟就来啃我啊哈哈  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://damao2017.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://damao2017.github.io/about/</guid>
-      <description>Wish everything goes well with you&amp;hellip;
-////////////////////////////////// /////////////\\\\ //// (((((((((((((( \\\\ //// ))) ~~ ~~ ((( //// ((( (*) (*) ))) //// ))) &amp;lt; ((( //// ((( &amp;#39;\______/` ))) //// )))\___________/((( //// _) (_ //// / \_/ \  //// //| |\\ //// // )___( \\ //// \\( )// //// ( ) //// | | | //// | | | //// | | | //// _|_|_|_ //// ___ __ __ __ __ //// / _ \  | \/ | \ \ / / //// | |_| | | |\/| | \ V / //// |_| |_| |_| |_| |_| //////////////////////////////////</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://damao2017.github.io/post/amy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damao2017.github.io/post/amy/</guid>
-      <description>readmehtml {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:&#34;Lucida Console&#34;,Consolas,&#34;Courier&#34;,monospace; } html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: &#34;Helvetica Neue&#34;, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; } body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; } iframe { margin: auto; } a.url { word-break: break-all; } a:active, a:hover { outline: 0px; } .</description>
+      <description>Wish everything goes well with you&amp;hellip; ////////////////////////////////// /////////////\\\\ //// (((((((((((((( \\\\ //// ))) ~~ ~~ ((( //// ((( (*) (*) ))) //// ))) &amp;lt; ((( //// ((( &#39;\______/` ))) //// )))\___________/((( //// _) (_ //// / \_/ \ //// //| |\\ //// // )___( \\ //// \\( )// //// ( ) //// | | | //// | | | //// | | | //// _|_|_|_ //// ___ __ __ __ __ //// / _ \ | \/ | \ \ / / //// | |_| | | |\/| | \ V / //// |_| |_| |_| |_| |_| //////////////////////////////////</description>
     </item>
     
   </channel>
