@@ -53,7 +53,8 @@
   <script>hljs.initHighlightingOnLoad();</script>
   
 
-  <link rel="shortcut icon" href="https://damao2017.github.io/img/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="https://damao2017.github.io/img/favicon.ico"  type="image/x-icon">  
+<link rel="shortcut icon" href="https://damao2017.github.io/img/favicon.ico" type="image/x-icon" />
 
   
   
@@ -215,7 +216,7 @@
   
     <article>
   <header>
-    <h2><a href="https://damao2017.github.io/post/use_hugo/">hugo使用</a></h2>
+    <h2><a href="https://damao2017.github.io/post/hugo%E4%BD%BF%E7%94%A8/">hugo使用</a></h2>
 
     <div class="post-meta">
 
@@ -247,12 +248,12 @@
   </header>
 
   <p>
-  下载hugo可执行文件
+  hugo可以将md文件变成html页面，可以方便的发布到外网服务器上   下载hugo可执行文件
 我是windows平台，直接点击发布页，下载windows版本https://github.com/gohugoio/hugo/releases 
   把hugo.exe文件所在的路径加入到环境变量path中
   打开cmd，执行
- hugo new site note
-将会创建一个note文件夹，下面有一些文件。
+ hugo new site notes
+将会创建一个notes文件夹，下面有一些文件。
   文件夹内容如下
  archetypes/ --default.md 原始的md模板文件 content/ --md文件存放处 layouts/ static/ themes/ --主题文件 config.toml --配置文件   default.md模板修改如下：
 +++ #默认此处应该是---,markdown显示到网页有问题，改成+++ title: &quot;{{ replace .Name &quot;-&quot; &quot; &quot; | title }}&quot; date: {{ .Date }} draft: false tags: [&quot;&quot;] ++++   下载主题文件
@@ -260,12 +261,12 @@
 选择你喜欢的主题，去github，下载全部项目zip，然后复制到themes文件夹。
 我选的是这个https://github.com/yoshiharuyamashita/blackburn/archive/master.zip
 最终目录为/themes/blackburn
-archetypes/ exampleSite/ images/ layouts/ static/ ---/img/favicon.ico 网页图标 theme.
+archetypes/ exampleSite/ images/ layouts/ static/ ---/img/favicon.
   </p>
 
   
   <footer>
-    <a href="https://damao2017.github.io/post/use_hugo/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+    <a href="https://damao2017.github.io/post/hugo%E4%BD%BF%E7%94%A8/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
   </footer>
   
 </article>
@@ -277,8 +278,6 @@ archetypes/ exampleSite/ images/ layouts/ static/ ---/img/favicon.ico 网页图�
 </div>
 <script src="https://damao2017.github.io/js/ui.js"></script>
 <script src="https://damao2017.github.io/js/menus.js"></script>
-
-
 
 
 
