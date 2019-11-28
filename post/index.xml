@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on damao&#39;s blog</title>
+    <link>https://damao2017.github.io/post/</link>
+    <description>Recent content in Posts on damao&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>&amp;copy; 9012. All rights reserved.</copyright>
+    <lastBuildDate>Thu, 28 Nov 2019 19:44:54 +0800</lastBuildDate>
+    
+	<atom:link href="https://damao2017.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VUE 学习笔记</title>
+      <link>https://damao2017.github.io/post/vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Thu, 28 Nov 2019 19:44:54 +0800</pubDate>
+      
+      <guid>https://damao2017.github.io/post/vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description>VUE 学习笔记   vue cli 需要nodejs环境和webpack环境
+  安装vue cli
+npm install @vue/cli -g   查看版本
+vue --version   拉取cli 2.x模板
+npm install @vue/cli-init -g   2.x创建项目
+vue init webpack my-project-name   3创建项目
+vue create my-project-name runtime+compiler:template-&amp;gt;ast-&amp;gt;render-&amp;gt;vdom-&amp;gt;UI runtime+only: render-&amp;gt;vdom-&amp;gt;UI runtime+only 性能更高，需要的文件越小，以后主要用这个 main.js里面的写法不同 render : function(createElement){ //直接使用render将app模块覆盖index的div return createElement(app); }
+  cli3 启动ui
+vue ui 在创建里面选择加载项目，进入项目仪表盘，再操作项目
+  安装vuex
+npm install vuex --save   安装</description>
+    </item>
+    
+    <item>
+      <title>markdown语法</title>
+      <link>https://damao2017.github.io/post/markdown%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Thu, 28 Nov 2019 19:25:58 +0800</pubDate>
+      
+      <guid>https://damao2017.github.io/post/markdown%E8%AF%AD%E6%B3%95/</guid>
+      <description>markdown语法 1.1 内容目录[TOC] [TOC] [TOC]
+2.0 代码 代码块​```markdownmarkdown​````单行代码`markdown单行代码
+2.1 字体 **加粗***斜体****斜体加粗***~~删除~~ 加粗 斜体 斜体加粗 删除  2.2 引用 &amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; 这里是一个&amp;gt;引用
+   这里是两个&amp;raquo;引用
+     这里是三个&amp;raquo;&amp;gt;引用
+   2.3 分割线 ***---  2.4 图片 ![image-20191128100805983](.\image-20191128100805983.png &amp;#34;截图测试&amp;#34;)![alt显示在图片下面的文字，相当于对图片内容的解释](图片地址 &amp;#34;图片的标题，当鼠标移到图片上时显示的内容。title可加可不加&amp;#34;)可以截图后直接复制粘贴进typora2.5 超链接 &amp;lt;a href=&amp;#34;http://baidu.com&amp;#34; target=&amp;#34;_blank&amp;#34;&amp;gt;baidu&amp;lt;/a&amp;gt;[百度](http://baidu.com)按ctrl鼠标点这个链接就会打开网页邮箱：&amp;lt;example@w3cschool.cn&amp;gt;网址：&amp;lt;www.baidu.com&amp;gt;---[1]:https://github.com &amp;#34;GitHub&amp;#34;[2]:https://www.</description>
+    </item>
+    
+    <item>
+      <title>关于</title>
+      <link>https://damao2017.github.io/post/about/</link>
+      <pubDate>Thu, 28 Nov 2019 19:25:58 +0800</pubDate>
+      
+      <guid>https://damao2017.github.io/post/about/</guid>
+      <description>大家好，我是渣渣辉。
+简介  出生地：香港 性别：男 年龄：38  演员经历  是兄弟就来啃我 是兄弟就来啃我啊 是兄弟就来啃我啊哈哈  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://damao2017.github.io/post/amy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damao2017.github.io/post/amy/</guid>
+      <description>readmehtml {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:&#34;Lucida Console&#34;,Consolas,&#34;Courier&#34;,monospace; } html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: &#34;Helvetica Neue&#34;, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; } body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; } iframe { margin: auto; } a.url { word-break: break-all; } a:active, a:hover { outline: 0px; } .</description>
+    </item>
+    
+  </channel>
+</rss>
