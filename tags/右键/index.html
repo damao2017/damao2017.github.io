@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.60.0" />
 
-  <title>damao&#39;s blog</title>
+  <title>右键 &middot; damao&#39;s blog</title>
 
     
 
@@ -43,7 +43,7 @@
  
   
   <link rel="alternate" type="application/rss+xml" title="damao&#39;s blog"
-    href='https://damao2017.github.io/index.xml' />
+    href='https://damao2017.github.io/tags/%E5%8F%B3%E9%94%AE/index.xml' />
   
 
   
@@ -134,8 +134,7 @@
 
 
 <div class="header">
-  <h1>damao&#39;s blog</h1>
-  <h2>好好学习 天天向上</h2>
+  <h1>右键</h1>
 </div>
 
 <div class="content">
@@ -188,173 +187,6 @@ Windows Registry Editor Version 5.00 [HKEY_CLASSES_ROOT\.md] @=&quot;TyporaMarkd
 </article>
 
   
-    <article>
-  <header>
-    <h2><a href="https://damao2017.github.io/post/hugo%E4%BD%BF%E7%94%A8/">hugo使用</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>2019-28-28 20:50:50</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://damao2017.github.io/tags/hugo">hugo</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://damao2017.github.io/tags/%E4%BD%BF%E7%94%A8">使用</a>
-    
-  </div>
-  
-  
-
-</div>
-
-  </header>
-
-  <p>
-  hugo可以将md文件变成html页面，可以方便的发布到外网服务器上   下载hugo可执行文件
-我是windows平台，直接点击发布页，下载windows版本https://github.com/gohugoio/hugo/releases 
-  把hugo.exe文件所在的路径加入到环境变量path中
-  打开cmd，执行
- hugo new site notes
-将会创建一个notes文件夹，下面有一些文件。
-  文件夹内容如下
- archetypes/ --default.md 原始的md模板文件 content/ --md文件存放处 layouts/ static/ themes/ --主题文件 config.toml --配置文件   default.md模板修改如下：
-+++ #默认此处应该是---,markdown显示到网页有问题，改成+++ title: &quot;{{ replace .Name &quot;-&quot; &quot; &quot; | title }}&quot; date: {{ .Date }} draft: false tags: [&quot;&quot;] ++++   下载主题文件
-官方主题地址https://themes.gohugo.io/ 
-选择你喜欢的主题，去github，下载全部项目zip，然后复制到themes文件夹。
-我选的是这个https://github.com/yoshiharuyamashita/blackburn/archive/master.zip
-最终目录为/themes/blackburn
-archetypes/ exampleSite/ images/ layouts/ static/ ---/img/favicon.
-  </p>
-
-  
-  <footer>
-    <a href="https://damao2017.github.io/post/hugo%E4%BD%BF%E7%94%A8/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://damao2017.github.io/post/vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">VUE 学习笔记</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>2019-28-28 19:44:44</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://damao2017.github.io/tags/vue">vue</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://damao2017.github.io/tags/%E7%AC%94%E8%AE%B0">笔记</a>
-    
-  </div>
-  
-  
-
-</div>
-
-  </header>
-
-  <p>
-  VUE 学习笔记   vue cli 需要nodejs环境和webpack环境
-  安装vue cli
-npm install @vue/cli -g   查看版本
-vue --version   拉取cli 2.x模板
-npm install @vue/cli-init -g   2.x创建项目
-vue init webpack my-project-name   3创建项目
-vue create my-project-name runtime+compiler:template-&gt;ast-&gt;render-&gt;vdom-&gt;UI runtime+only: render-&gt;vdom-&gt;UI runtime+only 性能更高，需要的文件越小，以后主要用这个 main.js里面的写法不同 render : function(createElement){ //直接使用render将app模块覆盖index的div return createElement(app); }
-  cli3 启动ui
-vue ui 在创建里面选择加载项目，进入项目仪表盘，再操作项目
-  安装vuex
-npm install vuex --save   安装
-  </p>
-
-  
-  <footer>
-    <a href="https://damao2017.github.io/post/vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://damao2017.github.io/post/markdown%E8%AF%AD%E6%B3%95/">markdown语法</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>2019-28-28 19:25:25</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://damao2017.github.io/tags/markdown">markdown</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://damao2017.github.io/tags/%E8%AF%AD%E6%B3%95">语法</a>
-    
-  </div>
-  
-  
-
-</div>
-
-  </header>
-
-  <p>
-  markdown语法 1.1 内容目录[TOC] [TOC] [TOC]
-2.0 代码 代码块​```markdownmarkdown​````单行代码`markdown单行代码
-2.1 字体 **加粗***斜体****斜体加粗***~~删除~~ 加粗 斜体 斜体加粗 删除  2.2 引用 &gt;&gt;&gt;&gt;&gt;&gt; 这里是一个&gt;引用
-   这里是两个&raquo;引用
-     这里是三个&raquo;&gt;引用
-   2.3 分割线 ***---  2.4 图片 ![image-20191128100805983](.\image-20191128100805983.png &#34;截图测试&#34;)![alt显示在图片下面的文字，相当于对图片内容的解释](图片地址 &#34;图片的标题，当鼠标移到图片上时显示的内容。title可加可不加&#34;)可以截图后直接复制粘贴进typora2.5 超链接 &lt;a href=&#34;http://baidu.com&#34; target=&#34;_blank&#34;&gt;baidu&lt;/a&gt;[百度](http://baidu.com)按ctrl鼠标点这个链接就会打开网页邮箱：&lt;example@w3cschool.cn&gt;网址：&lt;www.baidu.com&gt;---[1]:https://github.com &#34;GitHub&#34;[2]:https://www.
-  </p>
-
-  
-  <footer>
-    <a href="https://damao2017.github.io/post/markdown%E8%AF%AD%E6%B3%95/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-
-  
-
-
 </div>
 
 </div>
@@ -369,4 +201,3 @@ npm install vuex --save   安装
 
 </body>
 </html>
-

@@ -7,10 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>&amp;copy; 9012. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 28 Nov 2019 20:50:55 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 29 Nov 2019 17:34:53 +0800</lastBuildDate>
     
 	<atom:link href="https://damao2017.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>win 右键新增markdown文件</title>
+      <link>https://damao2017.github.io/post/win-%E5%8F%B3%E9%94%AE%E6%96%B0%E5%A2%9Emarkdown%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Fri, 29 Nov 2019 17:34:53 +0800</pubDate>
+      
+      <guid>https://damao2017.github.io/post/win-%E5%8F%B3%E9%94%AE%E6%96%B0%E5%A2%9Emarkdown%E6%96%87%E4%BB%B6/</guid>
+      <description>win 右键新增markdown文件
+  新建txt文本, 复制进一下内容, 然后修改后缀为: reg.
+Windows Registry Editor Version 5.00 [HKEY_CLASSES_ROOT\.md] @=&amp;quot;TyporaMarkdownFile&amp;quot; &amp;quot;PerceivedType&amp;quot;=&amp;quot;text&amp;quot; &amp;quot;Content Type&amp;quot;=&amp;quot;text/plain&amp;quot; [HKEY_CLASSES_ROOT\.md\ShellNew] &amp;quot;NullFile&amp;quot;=&amp;quot;&amp;quot;   双击reg文件, 导入注册表, 然后刷新桌面, 右键 ,已存在markdown文件，然而有个缺陷, 新建的Markdown文件是默认ANSI编码格式. 作为程序猿, 一般都希望默认是utf-8格式.
+我的电脑记事本已经默认是utf-8默认字符集了，所以下面的都不用调整。可能是我装了git或者其他软件。
+  首先准备一个utf-8编码的md文件模板 ，模板里添加
+   typora-copy-images-to:media  没有内容的空文件, 即使设置utf-8编码, 下次再打开, 你会发现, 依旧是ANSI编码. 所以索性加上上述内容, 这段内容是指定Typora将粘贴的图片自动保存至md文件同路径下的`./media`文件夹里. 4. 将模板文件放在`C:\Program Files\Microsoft Office\root\VFS\Windows\SHELLNEW`下(每个电脑可能不一致, 应该影响不大, 总之放到一个地方即可). 5. 设置注册表 `HKEY_CLASSES_ROOT\.md\ShellNew`下新建字符串值, 值设设为前文准备的模板文件路径. 6. 设置默认新建的txt文件为UTF-8编码格式. 对应的注册表路径: `HKEY_CLASSES_ROOT\.txt\ShellNew` </description>
+    </item>
     
     <item>
       <title>hugo使用</title>
