@@ -185,19 +185,23 @@
 </li>
 <li>
 <p>首先准备一个utf-8编码的md文件模板 ，模板里添加</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"></code></pre></div></li>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">+++
+typora-copy-images-to:media
++++
+</code></pre></div><p>没有内容的空文件, 即使设置utf-8编码, 下次再打开, 你会发现, 依旧是ANSI编码. 所以索性加上上述内容, 这段内容是指定Typora将粘贴的图片自动保存至md文件同路径下的<code>./media</code>文件夹里.</p>
+</li>
+<li>
+<p>将模板文件放在<code>C:\Program Files\Microsoft Office\root\VFS\Windows\SHELLNEW</code>下(每个电脑可能不一致, 应该影响不大, 总之放到一个地方即可).</p>
+</li>
+<li>
+<p>设置注册表
+<code>HKEY_CLASSES_ROOT\.md\ShellNew</code>下新建字符串值, 值设设为前文准备的模板文件路径.</p>
+</li>
+<li>
+<p>设置默认新建的txt文件为UTF-8编码格式. 对应的注册表路径: <code>HKEY_CLASSES_ROOT\.txt\ShellNew</code></p>
+</li>
 </ol>
-<hr>
-<h2 id="typoracopyimagestomedia">typora-copy-images-to:media</h2>
-<pre><code>
- 没有内容的空文件, 即使设置utf-8编码, 下次再打开, 你会发现, 依旧是ANSI编码. 所以索性加上上述内容, 这段内容是指定Typora将粘贴的图片自动保存至md文件同路径下的`./media`文件夹里.
 
-4. 将模板文件放在`C:\Program Files\Microsoft Office\root\VFS\Windows\SHELLNEW`下(每个电脑可能不一致, 应该影响不大, 总之放到一个地方即可). 
-
-5. 设置注册表
-`HKEY_CLASSES_ROOT\.md\ShellNew`下新建字符串值, 值设设为前文准备的模板文件路径. 
-
-6. 设置默认新建的txt文件为UTF-8编码格式. 对应的注册表路径: `HKEY_CLASSES_ROOT\.txt\ShellNew` </code></pre>
   
   
 
