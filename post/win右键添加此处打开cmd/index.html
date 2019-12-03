@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.60.0" />
 
-  <title>右键 &middot; damao&#39;s blog</title>
+  <title>win右键添加此处打开cmd &middot; damao&#39;s blog</title>
 
     
 
@@ -41,9 +41,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
  
-  
-  <link rel="alternate" type="application/rss+xml" title="damao&#39;s blog"
-    href='https://damao2017.github.io/tags/%E5%8F%B3%E9%94%AE/index.xml' />
   
 
   
@@ -134,16 +131,12 @@
 
 
 <div class="header">
-  <h1>右键</h1>
+  <h1>win右键添加此处打开cmd</h1>
+  <h2></h2>
 </div>
-
 <div class="content">
-  
-    <article>
-  <header>
-    <h2><a href="https://damao2017.github.io/post/win%E5%8F%B3%E9%94%AE%E6%B7%BB%E5%8A%A0%E6%AD%A4%E5%A4%84%E6%89%93%E5%BC%80cmd/">win右键添加此处打开cmd</a></h2>
 
-    <div class="post-meta">
+  <div class="post-meta">
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
@@ -172,18 +165,57 @@
 
 </div>
 
-  </header>
+  <h3 id="1cmd">1.右键显示此处打开CMD</h3>
+<p>新建一个txt文件，格式一定要是ANSI的，然后输入以下内容，修改后缀名为.reg，双击导入注册表。</p>
+<p>好处是都不用按shift右键了，直接右键就有。win10默认的是打开power shell。</p>
+<pre><code>Windows Registry Editor Version 5.00
 
-  <p>
-  1.右键显示此处打开CMD 新建一个txt文件，格式一定要是ANSI的，然后输入以下内容，修改后缀名为.reg，双击导入注册表。
-好处是都不用按shift右键了，直接右键就有。win10默认的是打开power shell。
-Windows Registry Editor Version 5.00 [HKEY_CLASSES_ROOT\Directory\Background\shell\在此处打开 CMD] &quot;Icon&quot;=&quot;cmd.exe&quot; [HKEY_CLASSES_ROOT\Directory\Background\shell\在此处打开 CMD\command] @=&quot;cmd.exe /s /k pushd \&quot;%V\&quot;&quot; 2.文件夹上右键显示此处打开CMD Windows Registry Editor Version 5.00 [HKEY_CLASSES_ROOT\Folder\shell\在此处打开 CMD] &quot;Icon&quot;=&quot;cmd.exe&quot; [HKEY_CLASSES_ROOT\Folder\shell\在此处打开 CMD\command] @=&quot;cmd.exe /k cd %1&quot; 
-  </p>
+[HKEY_CLASSES_ROOT\Directory\Background\shell\在此处打开 CMD]
+&quot;Icon&quot;=&quot;cmd.exe&quot;
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\在此处打开 CMD\command]
+@=&quot;cmd.exe /s /k pushd \&quot;%V\&quot;&quot;
+</code></pre><h3 id="2cmd">2.文件夹上右键显示此处打开CMD</h3>
+<pre><code>Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Folder\shell\在此处打开 CMD]
+&quot;Icon&quot;=&quot;cmd.exe&quot;
+
+[HKEY_CLASSES_ROOT\Folder\shell\在此处打开 CMD\command]
+@=&quot;cmd.exe /k cd %1&quot;
+</code></pre>
+  
+  
 
   
-</article>
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://damao2017.github.io/post/hugo%E4%BD%BF%E7%94%A8/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://damao2017.github.io/post/hugo%E4%BD%BF%E7%94%A8/">hugo使用</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
 
   
+
 </div>
 
 </div>
@@ -194,7 +226,11 @@ Windows Registry Editor Version 5.00 [HKEY_CLASSES_ROOT\Directory\Background\she
 
 
 
+<script src="https://damao2017.github.io/js/math-code.js"></script>
+  <script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
 
 
 </body>
 </html>
+
