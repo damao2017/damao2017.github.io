@@ -1,2 +1,2 @@
 # damao2017.github.io
-my blog
+[my blog](https://damao2017.github.io/)
