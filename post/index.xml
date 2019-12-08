@@ -7,10 +7,36 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>&amp;copy; 9012. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 03 Dec 2019 16:21:23 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 08 Dec 2019 21:30:25 +0800</lastBuildDate>
     
 	<atom:link href="https://damao2017.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>json-server使用</title>
+      <link>https://damao2017.github.io/post/json-server%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Sun, 08 Dec 2019 21:30:25 +0800</pubDate>
+      
+      <guid>https://damao2017.github.io/post/json-server%E4%BD%BF%E7%94%A8/</guid>
+      <description>1.安装 模拟数据，支持RESTful风格，REST风格是，只关心前面的POST，GET`,DELETE,PUT`，后面的链接都一样，无需过多关注
+npm install -g json-server ##查看所有命令 json-server --help 2.启动 在任意位置创建一个db.json文件。里面包含一些数据，在这个数据文件打开cmd，输入json-server --watch db.json即可打开本地网络接口。
+{ &amp;#34;list&amp;#34;: [ { &amp;#34;id&amp;#34;: 1, &amp;#34;name&amp;#34;: &amp;#34;张三&amp;#34;, &amp;#34;tel&amp;#34;: &amp;#34;15223810923&amp;#34; }, { &amp;#34;id&amp;#34;: 2, &amp;#34;name&amp;#34;: &amp;#34;李四&amp;#34;, &amp;#34;tel&amp;#34;: &amp;#34;15223810923&amp;#34; }, { &amp;#34;id&amp;#34;: 3, &amp;#34;name&amp;#34;: &amp;#34;王二&amp;#34;, &amp;#34;tel&amp;#34;: &amp;#34;15223810923&amp;#34; }, { &amp;#34;id&amp;#34;: 4, &amp;#34;name&amp;#34;: &amp;#34;陈五&amp;#34;, &amp;#34;tel&amp;#34;: &amp;#34;15223810923&amp;#34; }, { &amp;#34;name&amp;#34;: &amp;#34;赵六&amp;#34;, &amp;#34;tel&amp;#34;: &amp;#34;123454323&amp;#34;, &amp;#34;id&amp;#34;: 5 }, { &amp;#34;name&amp;#34;: &amp;#34;赵六&amp;#34;, &amp;#34;tel&amp;#34;: &amp;#34;123454323&amp;#34;, &amp;#34;id&amp;#34;: 6 }, { &amp;#34;name&amp;#34;: &amp;#34;赵六&amp;#34;, &amp;#34;tel&amp;#34;: &amp;#34;123454323&amp;#34;, &amp;#34;id&amp;#34;: 7 } ], &amp;#34;users&amp;#34;: [ { &amp;#34;id&amp;#34;: 1, &amp;#34;name&amp;#34;: &amp;#34;陈五&amp;#34;, &amp;#34;sex&amp;#34;:&amp;#34;male&amp;#34;, &amp;#34;tel&amp;#34;: &amp;#34;12345678&amp;#34;, &amp;#34;auther&amp;#34;:{ &amp;#34;name&amp;#34;:&amp;#34;陈五&amp;#34;, &amp;#34;age&amp;#34;:&amp;#34;25&amp;#34; } }, { &amp;#34;id&amp;#34;: 2, &amp;#34;name&amp;#34;: &amp;#34;王二&amp;#34;, &amp;#34;sex&amp;#34;:&amp;#34;male&amp;#34;, &amp;#34;tel&amp;#34;: &amp;#34;15223810923&amp;#34;, &amp;#34;auther&amp;#34;:{ &amp;#34;name&amp;#34;:&amp;#34;王二&amp;#34;, &amp;#34;age&amp;#34;:&amp;#34;22&amp;#34; } } ], &amp;#34;user&amp;#34;: { &amp;#34;id&amp;#34;: 1, &amp;#34;name&amp;#34;: &amp;#34;陈五&amp;#34;, &amp;#34;tel&amp;#34;: &amp;#34;15223810923&amp;#34; }, &amp;#34;posts&amp;#34;: [ { &amp;#34;id&amp;#34;: 1, &amp;#34;title&amp;#34;: &amp;#34;json-server&amp;#34;, &amp;#34;author&amp;#34;: &amp;#34;typicode&amp;#34; } ], &amp;#34;comments&amp;#34;: [ { &amp;#34;id&amp;#34;: 1, &amp;#34;body&amp;#34;: &amp;#34;some comment&amp;#34;, &amp;#34;postId&amp;#34;: 1 } ], &amp;#34;profile&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;typicode&amp;#34; } } 3.</description>
+    </item>
+    
+    <item>
+      <title>VUE基础知识</title>
+      <link>https://damao2017.github.io/post/vue%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Wed, 04 Dec 2019 17:58:51 +0800</pubDate>
+      
+      <guid>https://damao2017.github.io/post/vue%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</guid>
+      <description>VUE基础知识 1. 核心概念 双向数据绑定：数据变化，页面上用数据的地方会自动变化
+通过 指令 扩展HTML，通过 表达式 绑定数据到HTML
+2.VUE的引入方式   本地文件引入
+下载vue.js文件，然后html使用&amp;lt;script&amp;gt;引入
+  CDN方式引入
+&amp;lt;script src=&amp;#34;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;   npm安装
+npm install vue   3.hello world &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;hello&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;!--2.定义数据展示div --&amp;gt; &amp;lt;div id=&amp;#34;app&amp;#34;&amp;gt; &amp;lt;!--4.通过表达式{{}} 获取data中定义的数据 --&amp;gt; {{ message }} &amp;lt;/div&amp;gt; &amp;lt;!--1.引入vue.js文件 --&amp;gt; &amp;lt;script src=&amp;#34;../vue.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt; // 3.新建vue对象，通过属性el:id绑定到div  var app = new Vue({ el: &amp;#39;#app&amp;#39;, data: { message: &amp;#39;Hello Vue!&amp;#39; } }) &amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; 4.</description>
+    </item>
     
     <item>
       <title>win右键添加此处打开cmd</title>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>使用 on damao&#39;s blog</title>
-    <link>https://damao2017.github.io/tags/%E4%BD%BF%E7%94%A8/</link>
-    <description>Recent content in 使用 on damao&#39;s blog</description>
+    <title>json-server on damao&#39;s blog</title>
+    <link>https://damao2017.github.io/tags/json-server/</link>
+    <description>Recent content in json-server on damao&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>&amp;copy; 9012. All rights reserved.</copyright>
     <lastBuildDate>Sun, 08 Dec 2019 21:30:25 +0800</lastBuildDate>
     
-	<atom:link href="https://damao2017.github.io/tags/%E4%BD%BF%E7%94%A8/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://damao2017.github.io/tags/json-server/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,28 +21,6 @@
       <description>1.安装 模拟数据，支持RESTful风格，REST风格是，只关心前面的POST，GET`,DELETE,PUT`，后面的链接都一样，无需过多关注
 npm install -g json-server ##查看所有命令 json-server --help 2.启动 在任意位置创建一个db.json文件。里面包含一些数据，在这个数据文件打开cmd，输入json-server --watch db.json即可打开本地网络接口。
 { &amp;#34;list&amp;#34;: [ { &amp;#34;id&amp;#34;: 1, &amp;#34;name&amp;#34;: &amp;#34;张三&amp;#34;, &amp;#34;tel&amp;#34;: &amp;#34;15223810923&amp;#34; }, { &amp;#34;id&amp;#34;: 2, &amp;#34;name&amp;#34;: &amp;#34;李四&amp;#34;, &amp;#34;tel&amp;#34;: &amp;#34;15223810923&amp;#34; }, { &amp;#34;id&amp;#34;: 3, &amp;#34;name&amp;#34;: &amp;#34;王二&amp;#34;, &amp;#34;tel&amp;#34;: &amp;#34;15223810923&amp;#34; }, { &amp;#34;id&amp;#34;: 4, &amp;#34;name&amp;#34;: &amp;#34;陈五&amp;#34;, &amp;#34;tel&amp;#34;: &amp;#34;15223810923&amp;#34; }, { &amp;#34;name&amp;#34;: &amp;#34;赵六&amp;#34;, &amp;#34;tel&amp;#34;: &amp;#34;123454323&amp;#34;, &amp;#34;id&amp;#34;: 5 }, { &amp;#34;name&amp;#34;: &amp;#34;赵六&amp;#34;, &amp;#34;tel&amp;#34;: &amp;#34;123454323&amp;#34;, &amp;#34;id&amp;#34;: 6 }, { &amp;#34;name&amp;#34;: &amp;#34;赵六&amp;#34;, &amp;#34;tel&amp;#34;: &amp;#34;123454323&amp;#34;, &amp;#34;id&amp;#34;: 7 } ], &amp;#34;users&amp;#34;: [ { &amp;#34;id&amp;#34;: 1, &amp;#34;name&amp;#34;: &amp;#34;陈五&amp;#34;, &amp;#34;sex&amp;#34;:&amp;#34;male&amp;#34;, &amp;#34;tel&amp;#34;: &amp;#34;12345678&amp;#34;, &amp;#34;auther&amp;#34;:{ &amp;#34;name&amp;#34;:&amp;#34;陈五&amp;#34;, &amp;#34;age&amp;#34;:&amp;#34;25&amp;#34; } }, { &amp;#34;id&amp;#34;: 2, &amp;#34;name&amp;#34;: &amp;#34;王二&amp;#34;, &amp;#34;sex&amp;#34;:&amp;#34;male&amp;#34;, &amp;#34;tel&amp;#34;: &amp;#34;15223810923&amp;#34;, &amp;#34;auther&amp;#34;:{ &amp;#34;name&amp;#34;:&amp;#34;王二&amp;#34;, &amp;#34;age&amp;#34;:&amp;#34;22&amp;#34; } } ], &amp;#34;user&amp;#34;: { &amp;#34;id&amp;#34;: 1, &amp;#34;name&amp;#34;: &amp;#34;陈五&amp;#34;, &amp;#34;tel&amp;#34;: &amp;#34;15223810923&amp;#34; }, &amp;#34;posts&amp;#34;: [ { &amp;#34;id&amp;#34;: 1, &amp;#34;title&amp;#34;: &amp;#34;json-server&amp;#34;, &amp;#34;author&amp;#34;: &amp;#34;typicode&amp;#34; } ], &amp;#34;comments&amp;#34;: [ { &amp;#34;id&amp;#34;: 1, &amp;#34;body&amp;#34;: &amp;#34;some comment&amp;#34;, &amp;#34;postId&amp;#34;: 1 } ], &amp;#34;profile&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;typicode&amp;#34; } } 3.</description>
-    </item>
-    
-    <item>
-      <title>hugo使用</title>
-      <link>https://damao2017.github.io/post/hugo%E4%BD%BF%E7%94%A8/</link>
-      <pubDate>Thu, 28 Nov 2019 20:50:55 +0800</pubDate>
-      
-      <guid>https://damao2017.github.io/post/hugo%E4%BD%BF%E7%94%A8/</guid>
-      <description>hugo可以将md文件变成html页面，可以方便的发布到外网服务器上   下载hugo可执行文件
-我是windows平台，直接点击发布页，下载windows版本https://github.com/gohugoio/hugo/releases 
-  把hugo.exe文件所在的路径加入到环境变量path中
-  打开cmd，执行
- hugo new site notes
-将会创建一个notes文件夹，下面有一些文件。
-  文件夹内容如下
- archetypes/ --default.md 原始的md模板文件 content/ --md文件存放处 layouts/ static/ themes/ --主题文件 config.toml --配置文件   default.md模板修改如下：
-+++ #默认此处应该是---,markdown显示到网页有问题，改成+++ title: &amp;quot;{{ replace .Name &amp;quot;-&amp;quot; &amp;quot; &amp;quot; | title }}&amp;quot; date: {{ .Date }} draft: false tags: [&amp;quot;&amp;quot;] ++++   下载主题文件
-官方主题地址https://themes.gohugo.io/ 
-选择你喜欢的主题，去github，下载全部项目zip，然后复制到themes文件夹。
-我选的是这个https://github.com/yoshiharuyamashita/blackburn/archive/master.zip
-最终目录为/themes/blackburn
-archetypes/ exampleSite/ images/ layouts/ static/ ---/img/favicon.</description>
     </item>
     
   </channel>

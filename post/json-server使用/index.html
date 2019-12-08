@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.60.0" />
+
+  <title>json-server使用 &middot; damao&#39;s blog</title>
+
+    
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://damao2017.github.io/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://damao2017.github.io/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://damao2017.github.io/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="icon" href="https://damao2017.github.io/img/favicon.ico"  type="image/x-icon">  
+<link rel="shortcut icon" href="https://damao2017.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+<div align="center">
+  <a class="pure-menu-heading brand" href="https://damao2017.github.io/">DM</a>
+  </div>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://damao2017.github.io/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://damao2017.github.io/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://damao2017.github.io/tags/"><i class='fa fa-tags fa-fw'></i>Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://damao2017.github.io/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://damao2017.github.io/post/index.xml"><i class='fa fa-rss fa-fw'></i>RSS</a>
+      
+        </li>
+      
+
+    </ul>
+  </div>
+
+  
+
+  <div style='position:absolute;bottom:0;width:100%;height:85px;'>
+  <div class="small-print">
+    <small>&copy; 9012. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>json-server使用</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2019-08-08 21:30:30</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://damao2017.github.io/tags/json-server">json-server</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://damao2017.github.io/tags/%E4%BD%BF%E7%94%A8">使用</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <h4 id="1">1.安装</h4>
+<p>模拟数据，支持RESTful风格，REST风格是，只关心前面的<code>POST</code>，<code>GET`,</code>DELETE<code>,</code>PUT`，后面的链接都一样，无需过多关注</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm install -g json-server
+
+<span style="color:#75715e">##查看所有命令</span>
+json-server --help
+</code></pre></div><h4 id="2">2.启动</h4>
+<p>在任意位置创建一个db.json文件。里面包含一些数据，在这个数据文件打开<code>cmd</code>，输入<code>json-server --watch db.json</code>即可打开本地网络接口。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+  <span style="color:#f92672">&#34;list&#34;</span>: [
+    {
+      <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#ae81ff">1</span>,
+      <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;张三&#34;</span>,
+      <span style="color:#f92672">&#34;tel&#34;</span>: <span style="color:#e6db74">&#34;15223810923&#34;</span>
+    },
+    {
+      <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#ae81ff">2</span>,
+      <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;李四&#34;</span>,
+      <span style="color:#f92672">&#34;tel&#34;</span>: <span style="color:#e6db74">&#34;15223810923&#34;</span>
+    },
+    {
+      <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#ae81ff">3</span>,
+      <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;王二&#34;</span>,
+      <span style="color:#f92672">&#34;tel&#34;</span>: <span style="color:#e6db74">&#34;15223810923&#34;</span>
+    },
+    {
+      <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#ae81ff">4</span>,
+      <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;陈五&#34;</span>,
+      <span style="color:#f92672">&#34;tel&#34;</span>: <span style="color:#e6db74">&#34;15223810923&#34;</span>
+    },
+    {
+      <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;赵六&#34;</span>,
+      <span style="color:#f92672">&#34;tel&#34;</span>: <span style="color:#e6db74">&#34;123454323&#34;</span>,
+      <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#ae81ff">5</span>
+    },
+    {
+      <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;赵六&#34;</span>,
+      <span style="color:#f92672">&#34;tel&#34;</span>: <span style="color:#e6db74">&#34;123454323&#34;</span>,
+      <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#ae81ff">6</span>
+    },
+    {
+      <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;赵六&#34;</span>,
+      <span style="color:#f92672">&#34;tel&#34;</span>: <span style="color:#e6db74">&#34;123454323&#34;</span>,
+      <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#ae81ff">7</span>
+    }
+  ],
+  <span style="color:#f92672">&#34;users&#34;</span>: [
+    {
+      <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#ae81ff">1</span>,
+      <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;陈五&#34;</span>,
+      <span style="color:#f92672">&#34;sex&#34;</span>:<span style="color:#e6db74">&#34;male&#34;</span>,
+      <span style="color:#f92672">&#34;tel&#34;</span>: <span style="color:#e6db74">&#34;12345678&#34;</span>,
+      <span style="color:#f92672">&#34;auther&#34;</span>:{
+        <span style="color:#f92672">&#34;name&#34;</span>:<span style="color:#e6db74">&#34;陈五&#34;</span>,
+        <span style="color:#f92672">&#34;age&#34;</span>:<span style="color:#e6db74">&#34;25&#34;</span>
+      }
+    },
+    {
+      <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#ae81ff">2</span>,
+      <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;王二&#34;</span>,
+      <span style="color:#f92672">&#34;sex&#34;</span>:<span style="color:#e6db74">&#34;male&#34;</span>,
+      <span style="color:#f92672">&#34;tel&#34;</span>: <span style="color:#e6db74">&#34;15223810923&#34;</span>,
+      <span style="color:#f92672">&#34;auther&#34;</span>:{
+        <span style="color:#f92672">&#34;name&#34;</span>:<span style="color:#e6db74">&#34;王二&#34;</span>,
+        <span style="color:#f92672">&#34;age&#34;</span>:<span style="color:#e6db74">&#34;22&#34;</span>
+      }
+    }
+  ],
+  <span style="color:#f92672">&#34;user&#34;</span>: {
+      <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#ae81ff">1</span>,
+      <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;陈五&#34;</span>,
+      <span style="color:#f92672">&#34;tel&#34;</span>: <span style="color:#e6db74">&#34;15223810923&#34;</span>
+    },
+  <span style="color:#f92672">&#34;posts&#34;</span>: [
+    { <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#f92672">&#34;title&#34;</span>: <span style="color:#e6db74">&#34;json-server&#34;</span>, <span style="color:#f92672">&#34;author&#34;</span>: <span style="color:#e6db74">&#34;typicode&#34;</span> }
+  ],
+  <span style="color:#f92672">&#34;comments&#34;</span>: [
+    { <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#f92672">&#34;body&#34;</span>: <span style="color:#e6db74">&#34;some comment&#34;</span>, <span style="color:#f92672">&#34;postId&#34;</span>: <span style="color:#ae81ff">1</span> }
+  ],
+  <span style="color:#f92672">&#34;profile&#34;</span>: { <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;typicode&#34;</span> }
+}
+</code></pre></div><h4 id="3">3.调用接口</h4>
+<pre><code>http://localhost:3000/posts?id=1
+</code></pre><h2 id="routes">Routes</h2>
+<p>Based on the previous <code>db.json</code> file, here are all the default routes. You can also add <a href="https://github.com/typicode/json-server#add-custom-routes">other routes</a> using <code>--routes</code>.</p>
+<h3 id="plural-routes">Plural routes</h3>
+<pre><code>GET    /posts
+GET    /posts/1
+POST   /posts
+PUT    /posts/1
+PATCH  /posts/1
+DELETE /posts/1
+</code></pre><h3 id="singular-routes">Singular routes</h3>
+<pre><code>GET    /profile
+POST   /profile
+PUT    /profile
+PATCH  /profile
+</code></pre><h3 id="filter">Filter</h3>
+<p>Use <code>.</code> to access deep properties</p>
+<pre><code>GET /posts?title=json-server&amp;author=typicode
+GET /posts?id=1&amp;id=2
+GET /comments?author.name=typicode
+</code></pre><h3 id="paginate">Paginate</h3>
+<p>Use <code>_page</code> and optionally <code>_limit</code> to paginate returned data.</p>
+<p>In the <code>Link</code> header you'll get <code>first</code>, <code>prev</code>, <code>next</code> and <code>last</code> links.</p>
+<pre><code>GET /posts?_page=7
+GET /posts?_page=7&amp;_limit=20
+</code></pre><p><em>10 items are returned by default</em></p>
+<h3 id="sort">Sort</h3>
+<p>Add <code>_sort</code> and <code>_order</code> (ascending order by default)</p>
+<pre><code>GET /posts?_sort=views&amp;_order=asc
+GET /posts/1/comments?_sort=votes&amp;_order=asc
+</code></pre><p>For multiple fields, use the following format:</p>
+<pre><code>GET /posts?_sort=user,views&amp;_order=desc,asc
+</code></pre><h3 id="slice">Slice</h3>
+<p>Add <code>_start</code> and <code>_end</code> or <code>_limit</code> (an <code>X-Total-Count</code> header is included in the response)</p>
+<pre><code>GET /posts?_start=20&amp;_end=30
+GET /posts/1/comments?_start=20&amp;_end=30
+GET /posts/1/comments?_start=20&amp;_limit=10
+</code></pre><p><em>Works exactly as <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/slice">Array.slice</a> (i.e. <code>_start</code> is inclusive and <code>_end</code> exclusive)</em></p>
+<h3 id="operators">Operators</h3>
+<p>Add <code>_gte</code> or <code>_lte</code> for getting a range</p>
+<pre><code>GET /posts?views_gte=10&amp;views_lte=20
+</code></pre><p>Add <code>_ne</code> to exclude a value</p>
+<pre><code>GET /posts?id_ne=1
+</code></pre><p>Add <code>_like</code> to filter (RegExp supported)</p>
+<pre><code>GET /posts?title_like=server
+</code></pre><h3 id="fulltext-search">Full-text search</h3>
+<p>Add <code>q</code></p>
+<pre><code>GET /posts?q=internet
+</code></pre><h3 id="relationships">Relationships</h3>
+<p>To include children resources, add <code>_embed</code></p>
+<pre><code>GET /posts?_embed=comments
+GET /posts/1?_embed=comments
+</code></pre><p>To include parent resource, add <code>_expand</code></p>
+<pre><code>GET /comments?_expand=post
+GET /comments/1?_expand=post
+</code></pre><p>To get or create nested resources (by default one level, <a href="https://github.com/typicode/json-server#add-custom-routes">add custom routes</a> for more)</p>
+<pre><code>GET  /posts/1/comments
+POST /posts/1/comments
+</code></pre><h3 id="database">Database</h3>
+<pre><code>GET /db
+</code></pre><h3 id="homepage">Homepage</h3>
+<p>Returns default index file or serves <code>./public</code> directory</p>
+<pre><code>GET /
+</code></pre><h2 id="extras">Extras</h2>
+<h3 id="static-file-server">Static file server</h3>
+<p>You can use JSON Server to serve your HTML, JS and CSS, simply create a <code>./public</code> directory or use <code>--static</code> to set a different static files directory.</p>
+<pre><code>mkdir public
+echo 'hello world' &gt; public/index.html
+json-server db.json
+json-server db.json --static ./some-other-dir
+</code></pre><h3 id="alternative-port">Alternative port</h3>
+<p>You can start JSON Server on other ports with the <code>--port</code> flag:</p>
+<pre><code>$ json-server --watch db.json --port 3004
+</code></pre><h3 id="access-from-anywhere">Access from anywhere</h3>
+<p>You can access your fake API from anywhere using CORS and JSONP.</p>
+<h3 id="remote-schema">Remote schema</h3>
+<p>You can load remote schemas.</p>
+<pre><code>$ json-server http://example.com/file.json
+$ json-server http://jsonplaceholder.typicode.com/db
+</code></pre><h3 id="generate-random-data">Generate random data</h3>
+<p>Using JS instead of a JSON file, you can create data programmatically.</p>
+<pre><code>// index.js
+module.exports = () =&gt; {
+  const data = { users: [] }
+  // Create 1000 users
+  for (let i = 0; i &lt; 1000; i++) {
+    data.users.push({ id: i, name: `user${i}` })
+  }
+  return data
+}
+$ json-server index.js
+</code></pre><p><strong>Tip</strong> use modules like <a href="https://github.com/Marak/faker.js">Faker</a>, <a href="https://github.com/boo1ean/casual">Casual</a>, <a href="https://github.com/victorquinn/chancejs">Chance</a> or <a href="https://github.com/json-schema-faker/json-schema-faker">JSON Schema Faker</a>.</p>
+<h3 id="https">HTTPS</h3>
+<p>There are many ways to set up SSL in development. One simple way is to use <a href="https://github.com/typicode/hotel">hotel</a>.</p>
+<h3 id="add-custom-routes">Add custom routes</h3>
+<p>Create a <code>routes.json</code> file. Pay attention to start every route with <code>/</code>.</p>
+<pre><code>{
+  &quot;/api/*&quot;: &quot;/$1&quot;,
+  &quot;/:resource/:id/show&quot;: &quot;/:resource/:id&quot;,
+  &quot;/posts/:category&quot;: &quot;/posts?category=:category&quot;,
+  &quot;/articles\\?id=:id&quot;: &quot;/posts/:id&quot;
+}
+</code></pre><p>Start JSON Server with <code>--routes</code> option.</p>
+<pre><code>json-server db.json --routes routes.json
+</code></pre><p>Now you can access resources using additional routes.</p>
+<pre><code>/api/posts # → /posts
+/api/posts/1  # → /posts/1
+/posts/1/show # → /posts/1
+/posts/javascript # → /posts?category=javascript
+/articles?id=1 # → /posts/1
+</code></pre><h3 id="add-middlewares">Add middlewares</h3>
+<p>You can add your middlewares from the CLI using <code>--middlewares</code> option:</p>
+<pre><code>// hello.js
+module.exports = (req, res, next) =&gt; {
+  res.header('X-Hello', 'World')
+  next()
+}
+json-server db.json --middlewares ./hello.js
+json-server db.json --middlewares ./first.js ./second.js
+</code></pre>
+  
+  
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://damao2017.github.io/post/vue%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://damao2017.github.io/post/vue%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">VUE基础知识</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+  
+
+</div>
+
+</div>
+</div>
+<script src="https://damao2017.github.io/js/ui.js"></script>
+<script src="https://damao2017.github.io/js/menus.js"></script>
+
+
+
+
+<script src="https://damao2017.github.io/js/math-code.js"></script>
+  <script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+
+</body>
+</html>
+

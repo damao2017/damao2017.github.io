@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>VUE on damao&#39;s blog</title>
-    <link>https://damao2017.github.io/tags/vue/</link>
-    <description>Recent content in VUE on damao&#39;s blog</description>
+    <title>基础 on damao&#39;s blog</title>
+    <link>https://damao2017.github.io/tags/%E5%9F%BA%E7%A1%80/</link>
+    <description>Recent content in 基础 on damao&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>&amp;copy; 9012. All rights reserved.</copyright>
     <lastBuildDate>Wed, 04 Dec 2019 17:58:51 +0800</lastBuildDate>
     
-	<atom:link href="https://damao2017.github.io/tags/vue/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://damao2017.github.io/tags/%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -25,25 +25,6 @@
   CDN方式引入
 &amp;lt;script src=&amp;#34;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;   npm安装
 npm install vue   3.hello world &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;hello&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;!--2.定义数据展示div --&amp;gt; &amp;lt;div id=&amp;#34;app&amp;#34;&amp;gt; &amp;lt;!--4.通过表达式{{}} 获取data中定义的数据 --&amp;gt; {{ message }} &amp;lt;/div&amp;gt; &amp;lt;!--1.引入vue.js文件 --&amp;gt; &amp;lt;script src=&amp;#34;../vue.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt; // 3.新建vue对象，通过属性el:id绑定到div  var app = new Vue({ el: &amp;#39;#app&amp;#39;, data: { message: &amp;#39;Hello Vue!&amp;#39; } }) &amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; 4.</description>
-    </item>
-    
-    <item>
-      <title>VUE 学习笔记</title>
-      <link>https://damao2017.github.io/post/vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Thu, 28 Nov 2019 19:44:54 +0800</pubDate>
-      
-      <guid>https://damao2017.github.io/post/vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
-      <description>VUE 学习笔记   vue cli 需要nodejs环境和webpack环境
-  安装vue cli
-npm install @vue/cli -g   查看版本
-vue --version   拉取cli 2.x模板
-npm install @vue/cli-init -g   2.x创建项目
-vue init webpack my-project-name   3创建项目
-vue create my-project-name runtime+compiler:template-&amp;gt;ast-&amp;gt;render-&amp;gt;vdom-&amp;gt;UI runtime+only: render-&amp;gt;vdom-&amp;gt;UI runtime+only 性能更高，需要的文件越小，以后主要用这个 main.js里面的写法不同 render : function(createElement){ //直接使用render将app模块覆盖index的div return createElement(app); }
-  cli3 启动ui
-vue ui 在创建里面选择加载项目，进入项目仪表盘，再操作项目
-  安装vuex
-npm install vuex --save   安装</description>
     </item>
     
   </channel>
